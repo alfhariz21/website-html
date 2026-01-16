@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Rangga Sidik - Portofolio Akademik</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #3b82f6;
+            --text-main: #475569;
+            --bg-body: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header with Photo Section */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: var(--white);
+            padding: 100px 20px 140px;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-photo-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            border: 6px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            background-color: #e2e8f0;
+        }
+
+        .profile-photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .badge {
+            background: var(--accent);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 900px;
+            margin: -80px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #e2e8f0;
+        }
+
+        /* Grid Items */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            background: #f8fafc;
+            border: 1px solid #edf2f7;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            background: var(--white);
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .info-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .info-label {
+            font-weight: 600;
+            width: 160px;
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive Mobile */
+        @media (max-width: 600px) {
+            .info-row { flex-direction: column; }
+            .info-label { width: 100%; margin-bottom: 4px; }
+            header { padding: 60px 20px 100px; }
+            .hero-content h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-content" data-aos="fade-down">
+            <div class="profile-photo-container">
+                <img src="https://api.unikom.ac.id/sdm/pasfoto.php?id=714b5bff658d406d" alt="Rangga Sidik">
+            </div>
+            <span class="badge">NIDN: 0420118601</span>
+            <h1>Rangga Sidik, S.Kom., M.Kom., M.Eng</h1>
+            <p>Lektor/III-b | Universitas Komputer Indonesia (UNIKOM)</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section data-aos="fade-up">
+            <h2>Identitas Diri</h2>
+            <div class="info-row">
+                <div class="info-label">Tempat, Tgl Lahir</div>
+                <div>Bandung, 20 November 1986 </div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Email</div>
+                <div>rangga.sidik@email.unikom.ac.id </div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Alamat Kantor</div>
+                <div>Jl. Dipati Ukur No. 112-116 Bandung </div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Mata Kuliah</div>
+                <div>Enterprise Architecture, Sistem Operasi, RPL, Testing & Implementasi </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Pendidikan</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">2012 - 2014</span>
+                    <h4 style="color: var(--primary);">Magister (S2)</h4>
+                    <p style="font-size: 0.9rem;">Sistem Informasi - UNIKOM [cite: 5, 7]</p>
+                </div>
+                <div class="card">
+                    <span class="tag">2005 - 2009</span>
+                    <h4 style="color: var(--primary);">Sarjana (S1)</h4>
+                    <p style="font-size: 0.9rem;">Sistem Informasi - UNIKOM [cite: 5, 6]</p>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Penelitian Terkini</h2>
+            <div class="card" style="margin-bottom: 15px;">
+                <span class="tag">2021 | Rp 25 Juta</span>
+                <p>Survei Dampak Pelaksanaan Merdeka Belajar Kampus Merdeka Di Program Studi Sistem Informasi [cite: 9]</p>
+                <small>Sumber: Kemdikbudristek [cite: 9]</small>
+            </div>
+            <div class="card">
+                <span class="tag">2020 | Rp 200 Juta</span>
+                <p>Development of Gender Integrated Vocational Training Model for West Java Province [cite: 9]</p>
+                <small>Sumber: Mogef/DoRun-DoRun (Korea Selatan) [cite: 9]</small>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Prestasi & HKI</h2>
+            <div class="info-row">
+                <div class="info-label">2022 (HKI)</div>
+                <div>Modul Pelatihan Vokasional E-Commerce Sekoper Cinta </div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">2017 (Award)</div>
+                <div>Dosen Berprestasi II Tingkat Nasional - UNIKOM [cite: 27]</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">2016 (Award)</div>
+                <div>Juara 2 Lomba Konsep Aplikasi Revolusi Mental - Kemenko PMK [cite: 27]</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portofolio Digital - Rangga Sidik, S.Kom., M.Kom., M.Eng</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Jalankan animasi saat scroll
+        AOS.init({
+            duration: 900,
+            once: true,
+            offset: 120
+        });
+    </script>
+</body>
+</html>
